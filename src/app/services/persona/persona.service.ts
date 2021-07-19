@@ -6,8 +6,8 @@ import {HttpClient} from '@angular/common/http';
 })
 export class PersonaService {
 
-  private url = 'http://localhost:8080/api/personas'
-  private url2 = 'http://localhost:8080/api/persona'
+  private url = 'https://spring-application-heroku.herokuapp.com/api/personas'
+  private url2 = 'https://spring-application-heroku.herokuapp.com/api/persona'
   constructor(private http:HttpClient) { }
   listarPersonas(){
    return this.http.get<Persona[]>(this.url);
